@@ -55,24 +55,30 @@ print("Cards Dealer Has:", dealer_card)
 print("Score Of The Dealer:", dealer_score)
 print("\n")
 
-if dealer_score > 21:
+if player_score > 21:
     print("Cards Dealer Has:", dealer_card)
     print("Score Of The Dealer:", dealer_score)
     print("Cards Player Has:", player_card)
     print("Score Of The Player:", player_score)
-    print("Player wins (Dealer Loss Because Dealer Score is exceeding 21)")
+    print("Dealer wins (Player Bust - Score over 21)")
+elif dealer_score > 21:
+    print("Cards Dealer Has:", dealer_card)
+    print("Score Of The Dealer:", dealer_score)
+    print("Cards Player Has:", player_card)
+    print("Score Of The Player:", player_score)
+    print("Player wins (Dealer Bust - Score over 21)")
 elif player_score > dealer_score:
     print("Cards Dealer Has:", dealer_card)
     print("Score Of The Dealer:", dealer_score)
     print("Cards Player Has:", player_card)
     print("Score Of The Player:", player_score)
-    print("Player wins (Player Has High Score than Dealer)")
+    print("Player wins (Player Has Higher Score than Dealer)")
 elif dealer_score > player_score:
     print("Cards Dealer Has:", dealer_card)
     print("Score Of The Dealer:", dealer_score)
     print("Cards Player Has:", player_card)
     print("Score Of The Player:", player_score)
-    print("Dealer wins (Dealer Has High Score than Player)")
+    print("Dealer wins (Dealer Has Higher Score than Player)")
 else:
     print("Cards Dealer Has:", dealer_card)
     print("Score Of The Dealer:", dealer_score)
